@@ -9,13 +9,13 @@ def home():
     #   with the appropriate log level.
     app.logger.debug("main debug")
     if (log == 'info'):
-        app.logger.info("main info")
+        app.logger.info("main info button pressed")
     elif (log == 'warning'):  
-        app.logger.warning("main warning")
+        app.logger.warning("main warning button pressed")
     elif (log == 'error'):
         app.logger.error("main error")
     else:
-        app.logger.critical("main critical")
+        app.logger.critical("main critical button pressed")
 
     return render_template(
         'index.html',
